@@ -20,11 +20,10 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        // Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "100");
         Configuration.baseUrl = System.getProperty("baseUrl", "https://www.sberbank.ru/ru/s_m_business/new_sbbol");
-       // Configuration.remote = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

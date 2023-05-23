@@ -50,7 +50,7 @@ tasks.withType(Test) {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
-task form_test(type: Test) {
+task tests_test(type: Test) {
     useJUnitPlatform {
         includeTags("CheckPage")
     }
