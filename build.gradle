@@ -5,6 +5,7 @@ plugins {
 group = 'com.jsd'
 group 'org.example'
 version '1.0-SNAPSHOT'
+
 allure {
     report {
         version.set("2.21.0")
