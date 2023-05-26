@@ -2,63 +2,73 @@ package object_page;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 
 public class ObjectPageCheckForm {
 
     public ObjectPageCheckForm openPage() {
-        open("https://www.sberbank.ru/ru/s_m_business/new_sbbol");
+        open("https://stopgame.ru/");
         return this;
     }
-    public ObjectPageCheckForm clickBuild() {
-        $(".kitt-top-menu").$(byText("Расчётный счёт")).click();
+
+    public ObjectPageCheckForm clickSection(String razdel) {
+        $("._header__navigation_r8vm0_1").$(byText(razdel)).click();
         return this;
     }
-    public ObjectPageCheckForm checkPage() {
-        $(".kitt-top-menu__subaction").shouldHave(text("Открыть счёт"));
+
+    public ObjectPageCheckForm checkReturnToMain() {
+        $("._full-row_1bpga_283").shouldHave(text("Всё про видеоигры"));
         return this;
     }
-    public ObjectPageCheckForm checkLogo() {
-        $(".kitt-header__logo").click();
+
+    public ObjectPageCheckForm openRead() {
+        $("._header__navigation_r8vm0_1").$(byText("Читать")).click();
         return this;
     }
+
     public ObjectPageCheckForm returnToMaine() {
-        $("._1NAlf").shouldHave(text("СберБизнес — банк для малого бизнеса"));
+        $("._header__logo__desktop_r8vm0_1").click();
         return this;
     }
-    public ObjectPageCheckForm ecoSystemBlock() {
-        $(".kitt-ecosystem__menu").click();
+
+    public ObjectPageCheckForm clickSectionInReadr(String razdel) {
+        $("._title-row--inner_1f00f_1").$(byText(razdel)).click();
         return this;
     }
-    public ObjectPageCheckForm checkEcoSystemBlock() {
-        $(".simplebar-content").shouldHave(text("Сбер Здоровье")).click();
+
+    public ObjectPageCheckForm clickToCorrector() {
+        $("._tabs_1f00f_140").$(byText("Редакция")).click();
         return this;
     }
-    public ObjectPageCheckForm ecoSystemPage() {
-        $(".simplebar-content").$(byText("Деловая среда")).click();
+
+    public ObjectPageCheckForm clickOnNewComments() {
+        $("._header__live_r8vm0_1").click();
         return this;
     }
-    public ObjectPageCheckForm checkEcoSystemPage() {
-        $(".sc-5c41a1e9-0").shouldHave(text("База знаний"));
+
+    public ObjectPageCheckForm checkHaveFormNewComments() {
+        $("._live-comments__header__title_ye4jv_1").shouldHave(text("Новые комментарии"));
         return this;
     }
-    public ObjectPageCheckForm chengWindow() {
-        switchTo().window(1);
+
+    public ObjectPageCheckForm clickOnSearch() {
+        $("._header__search-btn__icon_r8vm0_1").click();
         return this;
     }
-    public ObjectPageCheckForm openMore() {
-        $(".kitt-header-sections__more-text").click();
+
+    public ObjectPageCheckForm enterText() {
+        $("._search-input__input_eolml_1").setValue("Red Dead Redemption 2").pressEnter();
         return this;
     }
-    public ObjectPageCheckForm selectionDropdown() {
-        $(".kitt-header-sections__dropdown").$(byText("Частным клиентам")).click();
+
+    public ObjectPageCheckForm checkResult() {
+        $("._title_sh7r2_151").shouldHave(text(" Red Dead Redemption 2 "));
         return this;
     }
-    public ObjectPageCheckForm checkPageDropdown() {
-        $(".ts-container__header").shouldHave(text("Лучшие предложения"));
-        return this;
-    }
+
+
 }
 
 
