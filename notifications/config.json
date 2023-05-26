@@ -1,9 +1,9 @@
 {
   "base": {
     "logo": "",
-    "project": "sber project",
+    "project": "StopGame project",
     "environment": "meSpace",
-    "comment": "diplom",
+    "comment": "Diplom",
     "reportLink": "https://jenkins.autotests.cloud",
     "language": "ru",
     "allureFolder": "allure-report/",
