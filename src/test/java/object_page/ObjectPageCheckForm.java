@@ -14,27 +14,22 @@ public class ObjectPageCheckForm {
     }
 
     public ObjectPageCheckForm clickSection(String razdel) {
-        $("._header__navigation_r8vm0_1").$(byText(razdel)).click();
-        return this;
-    }
-
-    public ObjectPageCheckForm checkReturnToMain() {
-        $("._full-row_1bpga_283").shouldHave(text("Всё про видеоигры"));
-        return this;
-    }
-
-    public ObjectPageCheckForm openRead() {
-        $("._header__navigation_r8vm0_1").$(byText("Читать")).click();
+        $("._header__navigation_1je6x_1").$(byText(razdel)).click();
         return this;
     }
 
     public ObjectPageCheckForm returnToMaine() {
-        $("._header__logo__desktop_r8vm0_1").click();
+        $("._header__logo_1je6x_1").click();
         return this;
     }
 
-    public ObjectPageCheckForm clickSectionInReadr(String razdel) {
-        $("._title-row--inner_1f00f_1").$(byText(razdel)).click();
+    public ObjectPageCheckForm checkReturnToMain() {
+        $("._main-header_p8g9a_1").shouldHave(text("Всё про видеоигры"));
+        return this;
+    }
+
+    public ObjectPageCheckForm openRead() {
+        $("._header__navigation_1je6x_1").$(byText("Читать")).click();
         return this;
     }
 
@@ -43,8 +38,13 @@ public class ObjectPageCheckForm {
         return this;
     }
 
+    public ObjectPageCheckForm clickSectionInReadr(String razdel) {
+        $("._title-row--inner_1f00f_1").$(byText(razdel)).click();
+        return this;
+    }
+
     public ObjectPageCheckForm clickOnNewComments() {
-        $("._header__live_r8vm0_1").click();
+        $("._header__live_1je6x_1").click();
         return this;
     }
 
@@ -54,7 +54,7 @@ public class ObjectPageCheckForm {
     }
 
     public ObjectPageCheckForm clickOnSearch() {
-        $("._header__search-btn__icon_r8vm0_1").click();
+        $("._header__search-btn__icon_1je6x_1").click();
         return this;
     }
 
