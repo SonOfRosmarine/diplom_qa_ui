@@ -1,7 +1,6 @@
 package object_page;
 
 import java.util.concurrent.ThreadLocalRandom;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 

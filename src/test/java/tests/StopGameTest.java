@@ -4,7 +4,6 @@ import object_page.RandomData;
 import object_page.TestBase;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
 import static io.qameta.allure.Allure.step;
 
 
