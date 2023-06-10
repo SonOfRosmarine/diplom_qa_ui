@@ -1,4 +1,4 @@
-package object_page;
+package pages;
 
 import attach.Attach;
 import com.codeborne.selenide.Configuration;
@@ -13,9 +13,11 @@ import java.util.Map;
 
 public class TestBase {
 
-
-    public RandomData randomData = new RandomData();
-    public ObjectPageCheckForm objectPageCheckForm = new ObjectPageCheckForm();
+    public SelectionPage selectionPage = new SelectionPage();
+    public MainPage mainPage = new MainPage();
+    public FildSearchPage fildSearch = new FildSearchPage();
+    public CommentPage commentPage = new CommentPage();
+    public RedakciaPage redakciaPage = new RedakciaPage();
 
     @BeforeAll
     static void beforeAll() {

@@ -49,7 +49,7 @@
 
 ```bash
 gradle clean
-tests_test
+tests_ui
 -DbrowserSize="${BROWSER_SIZE}"
 -Dbrowser="${BROWSER}"
 -DbrowserVersion="${BROWSER_VERSION}"
@@ -69,7 +69,7 @@ tests_test
 Для локального запуска необходимо выполнить команду:
 ```
 gradle clean
-tests_test
+tests_ui
 ```
 
 ## :bar_chart: Отчеты о прохождении тестов доступны в Allure
