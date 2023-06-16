@@ -11,12 +11,12 @@ public class MainPage {
     }
 
     public MainPage returnToMaine() {
-        $("._header__logo_1je6x_1").click();
+        $("._header__logo__desktop_1je6x_1").click();
         return this;
     }
 
     public MainPage checkReturnToMain() {
-        $("._main-header_p8g9a_1").shouldHave(text("Всё про видеоигры"));
+        $("._main-header_yrukn_1").shouldHave(text("Всё про видеоигры"));
         return this;
     }
 }

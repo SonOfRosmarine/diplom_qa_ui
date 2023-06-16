@@ -36,7 +36,7 @@
 > - Проверка доступности окна "Новые комментарии" ;
 > - Проверка поиска на сайте.
 
-## <img width="4%" title="Jenkins" src="img/logo/Jenkins.svg"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/VarlamovaNadezhda_qa_guru_10_diplom_ui/)
+## <img width="4%" title="Jenkins" src="img/logo/Jenkins.svg"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/Students/job/JenkinsForm/33/allure/#suites/49d29e6b5c2859a8a4d53f6ce26bd4a5)
 
 Для запуска тестов из Jenkins:
 1. Необходимо нажать кнопку "Собрать с параметрами".

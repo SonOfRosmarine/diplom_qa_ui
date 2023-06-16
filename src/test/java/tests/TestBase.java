@@ -1,4 +1,4 @@
-package pages;
+package tests;
 
 import attach.Attach;
 import com.codeborne.selenide.Configuration;
@@ -8,6 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.*;
 
 import java.util.Map;
 

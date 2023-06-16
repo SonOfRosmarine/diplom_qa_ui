@@ -16,7 +16,7 @@ public class RedakciaPage {
         } else if (razdel.equals("Первая полоса")) {
             $("._title-row--inner_1f00f_1").shouldHave(text("Первая полоса"));
         } else {
-            $(".__title-row--inner_1f00f_1").shouldHave(text("Интервью с представителями видеоигровой индустрии"));
+            $("._title-row--inner_1f00f_1").shouldHave(text("Интервью с представителями видеоигровой индустрии"));
         }
     }
 

@@ -1,14 +1,13 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
-import pages.RandomData;
+import helpers.RandomData;
 import pages.RedakciaPage;
 import pages.SelectionPage;
-import pages.TestBase;
 
 import static io.qameta.allure.Allure.step;
 
-public class CheckSelection extends TestBase {
+public class CheckSelectionTest extends TestBase {
 
     @Test
     void checkingClickabilitySelection() {

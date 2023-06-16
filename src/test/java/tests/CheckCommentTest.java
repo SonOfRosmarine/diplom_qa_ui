@@ -1,11 +1,10 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
-import pages.TestBase;
 
 import static io.qameta.allure.Allure.step;
 
-public class CheckComment extends TestBase {
+public class CheckCommentTest extends TestBase {
 
     @Test
     void checkingNewCommentBlockClick() {
